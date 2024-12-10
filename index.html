@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>The Swaad</title>
+    <script src="https://kit.fontawesome.com/6d801e6579.js" crossorigin="anonymous"></script></head>
+<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+	}
+
+	.header{
+		min-height: 30vh;
+		width: 100%;
+		background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(IMG-20241130-WA0010.jpg) ;
+		background-position: center;
+		background-size: cover;
+		position: relative ;
+        color: white;
+
+	}
+    @media(max-width: 700px){
+     .header{
+        background-size: contain;
+        background-repeat: no-repeat;
+        
+     }
+}
+
+
+
+	nav {
+		display: flex;
+		padding:2% 6% ;
+		justify-content: space-between;
+		align-items: center;
+
+	}
+    
+    nav img{
+    	width: 150px;
+
+    }
+    .nav-links{
+    	flex: 1;
+    	text-align: right;
+
+    }
+    .nav-links  ul li{
+    	list-style: none;
+    	display: inline-block;
+    	padding: 8px 12px ;
+    	position: relative;
+    }
+    .nav-links  ul li a{
+    	color: white;
+    	font-size:13px ;
+    	text-decoration: none;
+    }
+    /* .nav-links  ul li::after{
+
+    	content: '';
+    	width: 0%;
+    	height: 2px;
+    	background: #f44336;
+    	display: block;
+    	margin: auto;
+    	transition: 0.5s; */
+
+    /* } */
+    .nav-links  ul li:hover::after{
+    	width: 100%;
+
+    }
+    .textbox{
+    	width: 90%;
+    	color: #fff;
+    	position: absolute;
+    	top: 50%;
+    	left: 50%;
+    	transform: translate(-50%,-50%);
+    	text-align: center;
+    }
+    .textbox h1{
+        margin: 1.5rem;
+    }
+    .herobtn{
+        display: inline-block;
+        text-decoration: none;
+        color: #fff;
+        border: 1px solid #fff;
+        padding: 12px 34px;
+        font-size: 13px;
+        background: transparent;
+        position: relative;
+        cursor: pointer;
+    }
+    .herobtn:hover{
+        border: 1px solid #f44336;
+        background: #f44336;
+        transition: 1s;
+
+    }
+    nav .fa-solid{
+        display: none;
+    }
+    @media(max-width: 700px){
+        .textbox h1{
+    	font-size: 30px;
+    }
+    .nav-links  ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2 ;
+        transition: 1s;
+
+    }
+    nav .fa-solid{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+    }
+/*----------- course--------- */
+
+.course{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+
+}
+p{
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.course-col-sna{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    margin-left: 10px;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(IMG-20241130-WA0011.jpg) ;
+    background-size: cover;
+    color: white;
+    
+}
+.course-col-lun{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    margin-left: 10px;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(IMG-20241130-WA0012.jpg) ;
+    background-size: cover;
+    color: white;
+    
+}
+.course-col-din{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    margin-left: 10px;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(IMG-20241130-WA0013.jpg) ;
+    background-size: cover;
+    color: white;
+    
+}
+.course-col-break{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    margin-left: 10px;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(IMG-20241130-WA0005.jpg) ;
+    background-size: cover;
+    color: white;
+    
+}
+.course-col1{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    margin-left: 10px;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(IMG-20241130-WA0009.jpg) ;
+    background-size: cover;
+    color: white;
+    word-wrap: break-word;
+}
+.course-col{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    margin-left: 10px;
+    word-wrap: break-word;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.course-col:hover{
+    box-shadow: 0 0 20px 0 rgba(0,0,0,1);
+}
+.course-col1:hover{
+    box-shadow: 0 0 20px 0 rgba(0,0,0,1);
+}
+@media(max-width:700px){
+    .row{
+        flex-direction: column;
+    }
+}
+   /* -----campus---- */
+   .campus{
+       width: 80%;
+       margin: auto;
+       text-align: center;
+       padding-top: 50px;
+   }
+   .campus-col{
+       flex-basis: 32%;
+       border-radius: 10px;
+       margin-bottom: 30px;
+       position: relative;
+       overflow: hidden;
+   }
+   .campus-col img{
+       width: 100%;
+       display: block;
+
+   }
+   .layer{
+       background: transparent;
+       height: 100%;
+       width: 100%;
+       top: 0;
+       left: 0;
+       position: absolute;
+       transition: 0.5s;
+   }
+   .layer:hover{
+       background: rgba(226,0,0,0.7);
+   }
+   .layer h3{
+       width: 100%;
+       font-weight: 500;
+       color: #fff;
+       font-size: 26px;
+       bottom: 0;
+       left: 50%;
+       transform: translateX(-50%);
+       position: absolute;
+       opacity: 0;
+       transition: 0.5s;
+   }
+
+   .layer:hover h3{
+       bottom: 49%;
+       opacity: 1;
+   }
+
+   li{
+    padding: 10px;
+    list-style: none;
+   }
+   a{
+    text-decoration: none;
+    color: blue;
+   }
+
+</style>
+<body>
+	<section class="header">
+		<nav>
+            <h4>The Swaad</h4>
+		</nav>
+		<div class="textbox">
+			<h1>Welcome to The Swaad</h1>
+			<a href="menu.html" class="herobtn">Click For Menu</a>
+            <p>Call/Whatsapp 8317063011 for order/home delivery!</p>
+		</div>
+	</section>
+
+    <!-- course -->
+    <section class="course">
+        <h1>What We Offer</h1>
+
+        <div class="row">
+            <div class="course-col1">
+            <h3>Bharpet</h3>
+            <p>Dal,Chola,Rajma,Dal Makhani,Kadhi,Chawal @ 60/-</p>
+            <p>Tawa Roti,Tandoori Roti,Dry sabji,paneer gravy @ 60/- </p>
+            <p>
+                Dal,Chola,Rajma,Dal Makhani,Kadhi,Chawal,
+                <br/>Tawa Roti,Tandoori Roti,Dry sabji,paneer gravy @ 100/-
+            </p>
+
+        </div>
+        <a href="menu.html">
+          <div class="course-col-break">
+              <h3>Breakfast</h3>
+          </div> 
+        </a>
+        <a href="menu.html">
+          <div class="course-col-lun">
+            <h3>Lunch</h3>
+        </div> 
+        </a>
+        <a href="menu.html">
+        <div class="course-col-din">
+            <h3>Dinner</h3>
+        </div> 
+        </a>
+        <a href="menu.html">
+        <div class="course-col-sna">
+            <h3>Snacks</h3>
+        </div>  
+        </a>
+        <a href="menu.html">
+            <div class="course-col-lun">
+                <h3>Thali</h3>
+                <p>Deluxe Thali- Dry veg, Dal,rice,4 tandoori/tawa, salad @120/- </p>
+                <p>Premium Thali- Paneer gravy, Dal,rice,4 tandoori/tawa, salad @160/- </p>
+                <p>Super Deluxe Thali- Paneer Sabji, dry veg,dal,rice,2 tandoori, 2 missi, salad, sweet @200/-</p>
+            </div>  
+            </a>
+        
+        </div>
+    </section>
+
+    <section class="campus">
+        <h1>Our Location</h1>
+        <div class="course-col"> 
+        <ul>
+            <li> <a href="https://www.google.com/maps/place/Naka+Chouraha,+Subhash+Marg,+Arya+Nagar,+Rajendra+Nagar,+Lucknow,+Uttar+Pradesh+226004/@26.8370709,80.9206685,17z/data=!4m9!1m2!2m1!1snaka+chauraha+lucknow!3m5!1s0x399bfdca81a49b9d:0xadf3ba4972e078d9!8m2!3d26.8370709!4d80.9206685!16s%2Fg%2F1v_slnkn"> 77/46A Tilpurwa, Naka Hindola, Lucknow 226004</a></li>
+            <li><a href="https://www.google.com/maps/place/Naka+Chouraha,+Subhash+Marg,+Arya+Nagar,+Rajendra+Nagar,+Lucknow,+Uttar+Pradesh+226004/@26.8370709,80.9206685,17z/data=!4m9!1m2!2m1!1snaka+chauraha+lucknow!3m5!1s0x399bfdca81a49b9d:0xadf3ba4972e078d9!8m2!3d26.8370709!4d80.9206685!16s%2Fg%2F1v_slnkn"> Shop No-2 Naka Hindola Lucknow 226004</a></li>
+        </ul>
+    </div>
+
+
+    </section>
+    
+</body>
+</html>
